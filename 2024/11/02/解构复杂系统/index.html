@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"qwqscc.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="我在知道系统论这门科学之前的一些关于系统的思考">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解构复杂系统">
+<meta property="og:url" content="https://qwqscc.github.io/2024/11/02/%E8%A7%A3%E6%9E%84%E5%A4%8D%E6%9D%82%E7%B3%BB%E7%BB%9F/index.html">
+<meta property="og:site_name" content="GC&#39;s Blog">
+<meta property="og:description" content="我在知道系统论这门科学之前的一些关于系统的思考">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-01T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-12-09T12:40:15.086Z">
+<meta property="article:author" content="GC">
+<meta property="article:tag" content="系统论">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://qwqscc.github.io/2024/11/02/%E8%A7%A3%E6%9E%84%E5%A4%8D%E6%9D%82%E7%B3%BB%E7%BB%9F/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>解构复杂系统 | GC's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">GC's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qwqscc.github.io/2024/11/02/%E8%A7%A3%E6%9E%84%E5%A4%8D%E6%9D%82%E7%B3%BB%E7%BB%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="GC">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GC's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          解构复杂系统
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-11-02 00:00:00" itemprop="dateCreated datePublished" datetime="2024-11-02T00:00:00+08:00">2024-11-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-12-09 20:40:15" itemprop="dateModified" datetime="2024-12-09T20:40:15+08:00">2024-12-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9D%82%E9%A1%B9/" itemprop="url" rel="index"><span itemprop="name">杂项</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">我在知道系统论这门科学之前的一些关于系统的思考</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>由于需要学习的东西越来越多，同时对有些已经”掌握”的知识有些心里没底，想要给自己漏洞百出，满目疮痍的知识体系重新填补一下，因而写这篇文章</p>
+<p>在某种程度上想要做到让体系的基础能够更加牢固，能够泛化到更多的场景，所以想要采取笛卡尔式的反思，将一切具体的事物从体系中移出，从而对最抽象的系统进行描述</p>
+<h3 id="系统的定义"><a href="#系统的定义" class="headerlink" title="系统的定义"></a>系统的定义</h3><p>物质或者概念的实体，由某种关系进行关联所组成的整体称之为系统。在某些情况之下关系本身也可以作为概念的实体进入到系统中成为更加抽象的关系所关联的对象。</p>
+<p>有了对系统的定义也就延伸出了对复杂系统的定义。在这里我想探讨的是对于一个系统的复杂度的度量，如果使用某种连续或者相对离散的指标进行度量，这势必会产生”相变“点的讨论，受限于人的认知，这里我不想采用一个度量指标来定义一个复杂系统。而是受到深度神经网络性质的启发，将某种不能明确确定系统状态的的系统称为复杂系统。</p>
+<p>在这里我想要给出一些例子，就以上面说到的深度神经网络而言，在我给定了输入的数据，网络的结构，以及损失函数的形式之后，训练的结果（网络模型的参数）我是不能通过某种方式确定下来，虽然可以通过例如对验证集的精度的计算，或者注意力热力图等方式，相对直观的理解网络所学习到的东西，但其本质上是无法被确定的。从这一部分可以看出，大多数的物理世界的系统都是为复杂系统，因为无限细分后得到的原子的状态是无法准确确定的，但我想要指明一点，这里的复杂系统的定义也可以是相对的。比如，对于一个电池系统，其系统的准确状态无法确定，但由于我们所关注的是宏观的物理指标比如电压电流之类，对于这样的电压电流，我时能够通过一个很明确的物理公式推断出来具体的结果，所以在关注到电池这个概念意义上的系统的时候，此系统就属于一个简单系统。</p>
+<h3 id="系统分析的方法"><a href="#系统分析的方法" class="headerlink" title="系统分析的方法"></a>系统分析的方法</h3><h4 id="线性的思考"><a href="#线性的思考" class="headerlink" title="线性的思考"></a>线性的思考</h4><p>虽然题名为结构复杂系统，但由复杂系统的定义也可以知道一个系统如果能够被解构，那这个系统就不是复杂系统。但我想再打破一层定义的限制，将复杂系统放到个体的视角下进行观察。对于一个没有学过物理的人而言，一个电池系统就能够被称之为复杂系统，因为其没有分析系统的先验工具（例如物理定律），但如果这个人学习了物理定律，那分析和推断这个系统所产生的宏观效果将变得可能。这样电池系统将不会成为再这个人的视角下的复杂系统。</p>
+<p>我们常常会使用意识流来描述人类思考的过程，从文字，音频等都可以看出，人的思考逻辑是线性的。所以通常而言，人为了理解复杂系统所构建的抽象概念系统或者物质系统都能够被粗浅的分割为几个重要（基础）性的对象和对象之间的复杂关系。所以想要解构一个负责系统就因该从这些重要的对象入手，分析对象的性质，对象之间的关系，对象与外界之间的关系。通常情况下，一个概念系统被创立，都是为了达成创立者的某种目的，因而关注到系统所能够解决的问题再很多情况下也是对结构系统有很大的帮助。</p>
+<h4 id="认知的流程"><a href="#认知的流程" class="headerlink" title="认知的流程"></a>认知的流程</h4><p>这里我想要分享（亦作为记录）一点自己认知的经验。再结构复杂系统的初期，我们最先因该关注到的是这个系统被创立的目的，系统与外界交互的方式。在明确了目的之后，可以自己确立一个目标或者观察这个领域的一些最佳实践，将实现目标作为解构这个系统的切入点。然后确定好解决这个问题最简单的流程框架，在这个框架中一般就能够找到那些在流程中必不可少的关键对象，将这些关键对象作为独立系统进行分析，又或者是将流程再进一步细化。这样迭代进行分析和梳理，以及不时的切换目标的状态观察过程的改变，一般就能够对复杂系统有一个简单的认知。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BA/" rel="tag"># 系统论</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/10/30/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="第一篇博客">
+      <i class="fa fa-chevron-left"></i> 第一篇博客
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%B7%E5%9B%A0"><span class="nav-number">1.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">2.</span> <span class="nav-text">系统的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">系统分析的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E7%9A%84%E6%80%9D%E8%80%83"><span class="nav-number">3.1.</span> <span class="nav-text">线性的思考</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A4%E7%9F%A5%E7%9A%84%E6%B5%81%E7%A8%8B"><span class="nav-number">3.2.</span> <span class="nav-text">认知的流程</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="GC"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">GC</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">GC</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
